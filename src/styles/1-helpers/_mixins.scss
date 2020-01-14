@@ -1,0 +1,9 @@
+@mixin btn($bg){
+    @include background-color (#EEA10D);
+
+    &:hover,
+    &focus {
+        outline: 0;
+        background-color: darken($bg, 20%);
+    }
+}
