@@ -1,0 +1,326 @@
+.about-me {
+	margin-top: -40px;
+    background: #fff;
+    &__wrapper {
+        height: 500px;
+    }
+    .about__header {
+        margin-top: 30px;
+        font-size: 54px;
+        text-align: center;
+    }
+    &__content {
+        display: flex;
+        margin: 30px auto;
+    }
+    &__left {
+        width: 40%;
+        padding: 20px;
+    }
+    &__paragraph {
+        font-size: 24px;
+        padding: 20px 0;
+    }
+    &__middle {
+        img {
+	        height: 300px;
+        }
+    }
+}
+
+
+
+.services {
+    width: 100%;
+    height: auto;
+    min-height: 700px;
+    padding: 0;
+    overflow: hidden;
+    color: #fff;
+    position: relative;
+    &__wrapper {
+        position: absolute;
+        width: 100%;
+        height: 700px;
+        background: url(../images/skills/skills.jpg) center no-repeat;
+        background-size: cover;
+        box-sizing: border-box;
+        &:before {
+            content: '';
+            position: absolute; 
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0,0,0, 0.6);
+        }
+        .section__header {
+            color: #fff;
+        }
+    }
+    &__inner {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 50px 0;
+    }
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 49%;
+        padding: 10px 20px 30px 20px;
+        font-size: 24px;
+        z-index: 2;
+        &--border-left {
+            border-left: 1px solid #fff;
+        }
+        &--border-top {
+            border-top: 1px solid #fff;
+        }
+    }
+    &__icon {
+        width: 40px;
+        height: 40px;
+        margin-right: 15px;
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        top: -3px;
+        &--icon1 {
+            background: url(../images/icons/1.png) center no-repeat;
+        }
+        &--icon2 {
+            background: url(../images/icons/2.png) center no-repeat;
+        }
+        &--icon3 {
+            background: url(../images/icons/3.png) center no-repeat;
+        }
+        &--icon4 {
+            background: url(../images/icons/4.png) center no-repeat;
+        }
+    }
+}
+
+
+
+
+.skills {
+    width: 100%;
+    background-color: #c4c4c4;
+    &__block {
+        width: 33.33333%;
+        background-color: #000;
+        padding: 50px 0;
+    }
+}
+
+
+
+
+
+
+.work {
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 700px;
+    padding: 0;
+    overflow: hidden;
+    color: #fff;
+    position: relative;
+    &__inner {
+        margin: 0;
+        padding-top: 50px;
+        display: block;
+    }
+    .screenshots {
+        position: relative;
+        overflow: hidden;
+        display: block;
+        width: 95%;
+        margin-left: 10px;
+        &:after {
+            content: '';
+            display: block;
+            padding-top: 45.5%;
+        }
+    }
+    &__screen {
+        border: none;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        border-radius: 2px;
+        box-shadow: 0 5px 10px 0 rgba(0,0,0,.75);
+    }
+    &__tablet {
+        width: 27%;
+        right: 14%;
+        z-index: 2;
+        border: none;
+        position: absolute;
+        bottom: 0;
+        border-radius: 2px;
+        box-shadow: 0 5px 10px 0 rgba(0,0,0,.75);
+    }
+    &__phone {
+        width: 15%;
+        right: 2%;
+        z-index: 3;
+        border: none;
+        position: absolute;
+        bottom: 0;
+        border-radius: 2px;
+        box-shadow: 0 5px 10px 0 rgba(0,0,0,.75);
+    }
+    &__name {
+        position: relative;
+        display: flex;
+        align-items: baseline;
+        width: 90%;
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+    &__header {
+        flex: 1;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+    .name__buttons {
+        a {
+            padding: 10px 15px;
+            background: 0 0;
+            border: 2px solid #00b7c7;
+            border-radius: 3px;
+            margin: 0 5px;
+            color: #00b7c7;
+            font-family: Gotham,Helvetica,Arial,sans-serif;
+            font-weight: 500;
+            text-transform: uppercase;
+            transition: all .3s ease;
+        }
+    }
+    .work__description {
+        display: block;
+        width: 90%;
+        margin-top: 15px;
+        margin-left: 10px;
+        margin-bottom: 25px;
+        font-size: 24px;
+        color: #cbcbcb;
+    }
+    .used__items {
+        display: block;
+        width: 90%;
+        margin-top: 30px;
+        margin-bottom: 100px;
+        .items {
+            margin-left: 10px;
+            .item {
+                display: inline-block;
+                padding: 7px 7px 5px;
+                margin-right: 5px;
+                margin-bottom: 10px;
+                color: #777;
+                background: #333;
+                border-radius: 3px;
+                text-transform: uppercase;
+                font-size: 10px;
+                font-weight: 500;
+                letter-spacing: .5px;
+            }
+        }
+    }
+}
+
+
+
+
+
+.contact {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: #2d599c;
+}
+
+.contact:after {
+    content: '';
+    display: block;
+    padding-top: 45.5%;
+}
+
+.contact__section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 350px;
+    width: 100%;
+    background: #fff;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 2px rgba(254, 236, 164, 1);
+}
+
+.contact__section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #332902;
+}
+
+.contact__section .input__field {
+    margin-bottom: 10px;
+}
+
+.contact__section .input__field input[type="text"],
+.contact__section textarea {
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    padding: 10px 0 10px 6px;
+}
+
+.contact__section textarea {
+    height: 80px;
+    resize: none; /*запрещает увеличивать\уменьшать филд для сообщения*/
+}
+
+.contact__section .contact__button input[type="submit"] {
+    border: 0;
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%;
+    background: #437bd0;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+} 
+
+.contact__section #error_message {
+    margin-bottom: 20px;
+    padding: 0;
+    background: #fe8b8e;
+    text-align: center;
+    font-size: 14px;
+    transition: all .5s ease;
+}
+
+
+
+
+
+
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: #000;
+}
