@@ -36,24 +36,22 @@
     min-height: 700px;
     padding: 0;
     overflow: hidden;
-    color: #fff;
+    color: #000;
     position: relative;
     &__wrapper {
         position: absolute;
         width: 100%;
         height: 700px;
-        background: url(../images/skills/skills.jpg) center no-repeat;
-        background-size: cover;
-        box-sizing: border-box;
-        &:before {
-            content: '';
-            position: absolute; 
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: rgba(0,0,0, 0.6);
-        }
+        background: #fafafa url(../images/skills/skills.png) no-repeat 0 .1875rem/cover;
+        // &:before {
+        //     content: '';
+        //     position: absolute; 
+        //     top: 0;
+        //     bottom: 0;
+        //     left: 0;
+        //     right: 0;
+        //     background: rgba(0,0,0, 0.6);
+        // }
         .section__header {
             color: #fff;
         }
@@ -108,10 +106,11 @@
 
 .skills {
     width: 100%;
-    background-color: #c4c4c4;
+    min-height: 750px;
+    background: #c4c4c4 url(../images/jap.png) center no-repeat;
+    background-size: cover;
     &__block {
         width: 33.33333%;
-        background-color: #000;
         padding: 50px 0;
     }
 }
@@ -314,13 +313,3 @@
     transition: all .5s ease;
 }
 
-
-
-
-
-
-.footer {
-    width: 100%;
-    height: 100px;
-    background-color: #000;
-}
