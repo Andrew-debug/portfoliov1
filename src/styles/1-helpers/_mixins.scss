@@ -1,9 +1,20 @@
-@mixin btn($bg){
-    @include background-color (#EEA10D);
+@mixin section-header {
+    position: relative;
+    font-size: 40px;
+    color: #000;
+    padding: 50px 0 0;
+    &:after {
+        content: '';
+        display: block;
+        width: 100px;
+        height: 2px;
+        background-color: #2196f3;
+        margin: 30px 0 0;
+    }
+}
 
-    &:hover,
-    &focus {
-        outline: 0;
-        background-color: darken($bg, 20%);
+@mixin header-reset {
+    .section__header {
+        padding: 0;
     }
 }

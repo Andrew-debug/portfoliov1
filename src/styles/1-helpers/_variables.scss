@@ -1,4 +1,36 @@
-$primary: #200bdbaf;
-$secondary: #f2b834;
-$black: #000;
-$font-size: 24px;
+
+// *****************
+// Color Variables
+// *****************
+$white: #fafafa;
+$black: #404040; 
+$pink: #d35689; 
+$gray: #676464;
+$aqua: #2196f3;
+$blue: #2d599c;
+$darkgray: #0f0f0f;
+
+
+// $shamrock: #2CD4AE; //Shamrock Green used for text links and headers
+// $turquoise: #4FE3C0; //buttons and in gradient
+// $celadon: #99E09C; //older green used in gradient
+// $mineShaft: #303030; //black used in text headers
+// $coal: #727272; //lighter black shade for supporting text
+// $alabaster: #F9F9F9; //nuetral used in large blocks
+// $gray: #E5E5E5; //used for lines and small accents
+
+// *****************
+// BREAKPOINTS
+// *****************
+$breakpoint-desktop: 1200px;
+$breakpoint-laptop: 950px;
+$breakpoint-tablet: 768px;
+$breakpoint-mobile: 400px;
+// @media (max-width: $breakpoint-tablet) {
+
+// }
+
+$font-light:  "Gotham-Light", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+$font-book:   "Gotham-Book", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+$font-medium: "Gotham-Medium", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+$font-bold: "Gotham-Bold", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;

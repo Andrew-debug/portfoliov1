@@ -9,25 +9,19 @@ html {
 body {
     width: 100%;
     height: 100%;
-    background-color: #fff;
-    font-family: 'Rationale', sans-serif;
+    background-color: $white;
+    font-family: "Roboto", sans-serif;
     font-size: 24px;
 }
 
 a {
     text-decoration: none;
-    color: #fff;
+    color: $white;
 }
 
 ul {
     list-style: none;
     padding: 0;
-}
-
-.work .work__inner .screenshots .work__screen {
-    width: 70%;
-    left: 0;
-    z-index: 1;
 }
 
 .container {
@@ -36,31 +30,3 @@ ul {
     margin: 0 auto;
 }
 
-.center {
-    text-align: center;
-}
-
-.right {
-    float: right;
-}
-
-.left {
-    float: left;
-}
-
-.section__header {
-    position: relative;
-    font-size: 40px;
-    color: #000;
-    padding: 50px 0 0;
-}
-
-
-.section__header:after {
-    content: '';
-    display: block;
-    width: 100px;
-    height: 2px;
-    background-color: #2465c7;
-    margin-top: 30px;
-}
