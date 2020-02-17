@@ -8,6 +8,11 @@
         justify-content: space-between;
         align-items: center;
     }
+    &__logo {
+        @media screen and (max-width: $breakpoint-tablet) {
+            margin-left: 20px;
+        }
+    }
     &__title {
         font-family: 'Rationale', sans-serif;
         font-weight: 400;
@@ -15,6 +20,11 @@
         font-size: 48px;
         line-height: 55px;
         margin-top: 50px;
+        @media screen and (max-width: $breakpoint-tablet) {
+            width: 100%;
+            font-size: 36px;
+            margin-top: 10px;
+        }
     }
     &__subtitle {
         padding: 0 0 50px 2px;
@@ -22,12 +32,8 @@
         font-size: 22px;
         line-height: 28px;
         color: $gray;
+        @media screen and (max-width: $breakpoint-tablet) {
+            padding: 0 0 10px;
+        }
     }
 }
-
-
-
-
-
-
-

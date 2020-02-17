@@ -6,7 +6,7 @@
 	margin-top: -40px;
     background-color: #fafafa;
     @media (max-width: $breakpoint-tablet) {
-        
+
     }
     &__wrapper {
         height: 500px;
@@ -16,15 +16,26 @@
             line-height: 1.4;
             font-family: $font-book;
             color: $black;
+            @media (max-width: $breakpoint-tablet) {
+                width: 100%;
+                padding: 60px 20px 0;
+            }
         }
     }
     &__content {
         display: flex;
         margin: 30px auto;
+        @media (max-width: $breakpoint-tablet) {
+            display: block;
+        }
     }
     &__left {
         width: 40%;
         padding: 10px 0 30px 0;
+        @media (max-width: $breakpoint-tablet) {
+            width: 100%;
+            padding: 0 10px;
+        }
     }
     &__paragraph {
         font-size: 18px;
@@ -37,8 +48,19 @@
         }
     }
     &__middle {
+        @media (max-width: $breakpoint-tablet) {
+            position: relative;
+            width: 100%;
+            height: 250px;
+        }
         img {
-	        height: 250px;
+            height: 250px;
+            @media (max-width: $breakpoint-tablet) {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
         }
     }
 }
@@ -53,6 +75,13 @@
     overflow: hidden;
     color: $white;
     position: relative;
+    @media (max-width: $breakpoint-laptop) {
+        margin-top: 100px;
+    }
+    @media (max-width: $breakpoint-tablet) {
+        margin-top: 450px;
+        min-height: 400px;
+    }
     &__wrapper {
         position: absolute;
         width: 100%;
@@ -71,6 +100,10 @@
         .section__header {
             color: $white;
             z-index: 999;
+            @media (max-width: $breakpoint-tablet) {
+                padding: 20px 10px;
+                font-size: 36px;
+            }
         }
     }
     &__inner {
@@ -79,6 +112,10 @@
         flex-wrap: wrap;
         width: 100%;
         padding: 70px 0;
+        @media (max-width: $breakpoint-tablet) {
+            display: block;
+            padding: 0;
+        }
     }
     &__content {
         display: flex;
@@ -88,11 +125,20 @@
         padding: 20px 20px 30px 20px;
         z-index: 2;
         font-family: $font-light;
+        @media (max-width: $breakpoint-tablet) {
+            width: 100%;
+        }
         &--border-left {
             border-left: 1px solid #fff;
+            @media (max-width: $breakpoint-tablet) {
+                border: 0;
+            }
         }
         &--border-top {
             border-top: 1px solid #fff;
+            @media (max-width: $breakpoint-tablet) {
+                border: 0;
+            }
         }
     }
     &__icon {
@@ -126,10 +172,16 @@
         text-transform: uppercase;
         margin: 5px 0 20px;
         font-size: 22px;
+        @media (max-width: $breakpoint-tablet) {
+            font-size: 18px;
+        }
     }
     &__text {
         margin-left: 55px;
         font-size: 18px;
+        @media (max-width: $breakpoint-tablet) {
+            margin-left: 0;
+        }
     }
 }
 
@@ -141,14 +193,29 @@
     min-height: 700px;
     background: #fafafa url(../images/skills/jap.png) center no-repeat;
     background-size: cover;
+    @media (max-width: $breakpoint-tablet) {
+        overflow: hidden;
+    }
+    .section__header {
+        @media (max-width: $breakpoint-tablet) {
+            padding: 20px 10px;
+            font-size: 36px;
+        }
+    }
     &__wrapper {
         display: flex;
         justify-content: space-between;
+        @media (max-width: $breakpoint-tablet) {
+            display: block;
+        }
     }
     &__block {
         width: 25%;
         display: inline-block;
         margin-left: 20px;
+        @media (max-width: $breakpoint-tablet) {
+            width: 100%;
+        }
     }
     &__header {
         display: flex;
@@ -194,9 +261,15 @@
     &__design {
         width: 30%;
         float: right;
+        @media (max-width: $breakpoint-tablet) {
+            width: 100%;
+        }
     }
     &__tools {
         margin-top: 70px;
+        @media (max-width: $breakpoint-tablet) {
+            width: 100%;
+        }
         .tools__item {
             font-size: 20px;
             padding: 5px;
@@ -226,6 +299,17 @@
     width: 100%;
     height: 100px;
     background-color: $black;
+    @media (max-width: $breakpoint-tablet) {
+        display: none;
+    }
+    &__link {
+        text-align: center;
+        font-size: 36px;
+        line-height: 100px;
+        :hover {
+            color: gray;
+        }
+    }
 }
 
 
@@ -239,8 +323,17 @@
     overflow: hidden;
     color: $white;
     position: relative;
+    .section__header {
+        @media (max-width: $breakpoint-tablet) {
+            padding: 20px 10px;
+            font-size: 36px;
+        }
+    }
     &__wrap {
         @include header-reset;
+        @media (max-width: $breakpoint-tablet) {
+            margin: 0 10px;
+        }
     }
     &__inner {
         margin: 0;
@@ -354,6 +447,18 @@
     height: 100px;
     background-color: $black;
     margin-top: 100px;
+    text-align: center;
+    @media (max-width: $breakpoint-tablet) {
+        display: none;
+    }
+    &__link {
+        a {
+            img {
+                width: 50px;
+                margin-top: 25px;
+            }
+        }
+    }
 }
 
 
@@ -370,6 +475,9 @@
     left: 0;
     z-index: 1;
     background: #2d599c;
+    @media (max-width: $breakpoint-tablet) {
+        display: none;
+    }
 }
 
 .contact:after {

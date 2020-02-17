@@ -6,6 +6,9 @@
     font-weight: 500;
     text-transform: uppercase;
     color: $black;
+    @media screen and (max-width: $breakpoint-tablet) {
+           display: none; 
+    }
     &__link {
         position: relative;
         display: inline-block;
@@ -56,6 +59,9 @@
     visibility: hidden;
     opacity: 0;
     transition: visibility .2s, opacity .5s ease;
+    @media screen and (max-width: $breakpoint-tablet) {
+        display: none; 
+    }
     .dot-container {
         text-align: right;
     }
